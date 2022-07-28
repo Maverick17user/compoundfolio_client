@@ -1,15 +1,6 @@
 import React from "react";
-import Link from "next/link";
+import { Home } from "../src/modules/HomeModule/views";
 
-const Thing: React.FC<{ msg: string }> = (props) => {
-  return <div>{props.msg}</div>;
+export default () => {
+  return <Home />;
 };
-
-export default () => (
-  <div>
-    Hello World. <Thing msg="hello" />
-    <Link href="/about">
-      <a>About</a>
-    </Link>
-  </div>
-);
