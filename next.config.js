@@ -1,10 +1,17 @@
-// next.config.js
-// const withCSS = require("@zeit/next-css");
+// // next.config.js
 const withImages = require("next-images");
-module.exports = withImages();
-// module.exports = withCSS({
-//   // ...withImages(),
-//   // future: {
-//   //   webpack5: true
-//   // }
-// });
+// module.exports = withImages();
+module.exports = withImages({
+  future: {
+    webpack5: true
+  },
+  images: {
+    disableStaticImages: true
+  }
+});
+
+// module.exports = {
+//   images: {
+//     disableStaticImages: true
+//   }
+// };
