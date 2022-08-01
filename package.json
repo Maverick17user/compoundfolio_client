@@ -5,10 +5,13 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "type-check": "tsc"
+    "type-check": "tsc",
+    "test": "jest"
   },
   "main": "pages/index.tsx",
   "dependencies": {
+    "@babel/preset-env": "^7.18.9",
+    "@babel/preset-react": "^7.18.6",
     "@emotion/react": "11.9.3",
     "@emotion/styled": "11.9.3",
     "@mui/material": "5.9.2",

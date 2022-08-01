@@ -2,6 +2,11 @@
   "compilerOptions": {
     "allowJs": true,
     "alwaysStrict": true,
+    "baseUrl": ".",
+    "paths": {
+      "@core/*": ["core/*"],
+      "@modules/*": ["modules/*"],
+    },
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
@@ -30,5 +35,5 @@
     "**/*.ts",
     "**/*.tsx",
     "src/modules/SignUpModule/components/SignUp/.d.ts"
-  ]
+, "pages/_document.js"  ]
 }
