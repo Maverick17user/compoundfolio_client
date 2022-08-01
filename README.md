@@ -1,1 +1,1 @@
-![plot](src\core\images\logo.png)
+![Logo](./src/core/images/logo.png)
