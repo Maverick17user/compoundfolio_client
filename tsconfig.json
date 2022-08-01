@@ -4,8 +4,8 @@
     "alwaysStrict": true,
     "baseUrl": ".",
     "paths": {
-      "@core/*": ["core/*"],
-      "@modules/*": ["modules/*"],
+      "@core/*": ["./src/core/*"],
+      "@modules/*": ["./src/modules/*"],
     },
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,

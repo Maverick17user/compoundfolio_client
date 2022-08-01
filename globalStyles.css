@@ -3,10 +3,17 @@
 
 * {
   box-sizing: border-box;
+  color: white;
 }
 
 html,
 body {
   margin: 0;
-  background-color: "#0F1112";
+  background: linear-gradient(107.28deg, #183A68 13.31%, #C4C4C4 97.18%);
+  background-blend-mode: multiply;
+  min-height: 100vh;
+}
+
+div#__next {
+  min-height: 100vh;
 }
