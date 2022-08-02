@@ -1,3 +1,4 @@
+// @ts-ignore
 import homeBg from "./homePageBg.png";
 import Image from "next/image";
 import { Box } from "@mui/material";

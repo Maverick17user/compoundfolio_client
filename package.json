@@ -1,6 +1,12 @@
 {
   "name": "nextjs-typescript-template",
-  "version": "1.0.0",
+  "version": "0.0.1",
+  "jest": {
+    "moduleNameMapper": {
+      ".+\\.(css|styl|svg|less|sass|scss|png|jpg|ttf|woff|woff2)$": "identity-obj-proxy",
+      ".+\\.(ts|js)$": "<rootDir>/src/core/__mocks__/fileMock.js"
+    }
+  },
   "scripts": {
     "dev": "next",
     "build": "next build",
@@ -16,7 +22,6 @@
     "@emotion/styled": "11.9.3",
     "@mui/material": "5.9.2",
     "@testing-library/jest-dom": "5.16.4",
-    "@testing-library/react": "13.3.0",
     "@types/node": "18.6.2",
     "@types/react": "18.0.15",
     "@types/react-dom": "18.0.6",
@@ -32,5 +37,10 @@
   },
   "license": "ISC",
   "keywords": [],
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "@testing-library/react": "^12.1.2",
+    "@types/testing-library__react": "^10.2.0",
+    "identity-obj-proxy": "^3.0.0"
+  }
 }

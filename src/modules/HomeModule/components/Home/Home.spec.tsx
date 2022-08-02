@@ -9,24 +9,23 @@ describe("<Home />", () => {
 
   it("Has *Let's try button*", () => {
     render(<Home />);
-    const tryBtn = screen.getByRole("button", { name: /Let's try/i });
+    const tryBtn = screen.getByRole("button", { name: /LET'S TRY/i });
     expect(tryBtn).toBeInTheDocument();
   });
 
   // jest.mock('next/link', () => ({ children }) => children);
   it("*Let's try button* leads to the sign up page", () => {
-    const spies: any = {};
-    spies.routerChangeStart = jest.fn();
+    const routerChangeStart = jest.fn();
 
     render(<Home />);
-    const tryBtn = screen.getByRole("button", { name: /Let's try/i });
+    const tryBtn = screen.getByRole("button", { name: /LET'S TRY/i });
     expect(tryBtn).toBeInTheDocument();
 
-    Router.events.on("routeChangeStart", spies.routerChangeStart);
+    Router.events.on("routeChangeStart", routerChangeStart);
 
     fireEvent.click(tryBtn);
-    expect(spies.routerChangeStart).toHaveBeenCalledWith("/sugn-up");
+    expect(routerChangeStart).toHaveBeenCalledWith("/sugn-up");
 
-    Router.events.off("routeChangeStart", spies.routerChangeStart);
+    Router.events.off("routeChangeStart", routerChangeStart);
   });
 });

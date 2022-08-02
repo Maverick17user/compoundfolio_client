@@ -2,21 +2,20 @@ import { Box } from "@mui/system";
 import Image from "next/image";
 import React from "react";
 import { CenterView, SignView } from "./styled";
-import logo from "src/core/images/logo.png";
+import logo from "../../images/signWallpaper.png";
 import { TextField, Typography } from "@mui/material";
 
 export default function SignUp() {
   return (
     <SignView>
-      <CenterView component="section" flexGrow={1}>
-        <Image
-          alt="App logo"
-          src={logo}
-          width="400px"
-          height="400px"
-          priority={true}
-        />
-      </CenterView>
+      {/* TODO: Make it adaptive */}
+      <Image
+        alt="wallpaper"
+        src={logo}
+        width="1024px"
+        height="1024px"
+        priority={true}
+      />
       <CenterView component="section" flexGrow={1}>
         <Box>
           <Typography component="h1">Sign up</Typography>
