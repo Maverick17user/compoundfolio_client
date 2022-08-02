@@ -35,5 +35,5 @@
     "**/*.ts",
     "**/*.tsx",
     "src/modules/SignUpModule/components/SignUp/.d.ts"
-, "pages/_document.js", "src/core/functions/assetsTransformers.js"  ]
+, "pages/_document.js", "src/core/functions/assetsTransformers.js", "pages/api/auth/resolvers/index.js", "src/core/functions/fetcher.js"  ]
 }

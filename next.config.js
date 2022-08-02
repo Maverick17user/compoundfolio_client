@@ -8,6 +8,7 @@ module.exports = withImages({
   images: {
     disableStaticImages: true
   },
+  // pageExtensions: ['ts, js, tsx'],
   exportPathMap: async function() {
     const paths = {
       '/': { page: '/' }
