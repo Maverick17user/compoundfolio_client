@@ -1789,6 +1789,14 @@
     "tslib" "^2.4.0"
     "webcrypto-core" "^1.7.4"
 
+"@playwright/test@^1.24.2":
+  "integrity" "sha512-Q4X224pRHw4Dtkk5PoNJplZCokLNvVbXD9wDQEMrHcEuvWpJWEQDeJ9gEwkZ3iCWSFSWBshIX177B231XW4wOQ=="
+  "resolved" "https://registry.npmjs.org/@playwright/test/-/test-1.24.2.tgz"
+  "version" "1.24.2"
+  dependencies:
+    "@types/node" "*"
+    "playwright-core" "1.24.2"
+
 "@popperjs/core@^2.11.5":
   "integrity" "sha512-9X2obfABZuDVLCgPK9aX0a/x4jaOEweTTWE2+9sr0Qqqevj2Uv5XorvusThmc9XGYpS9yI+fhh8RTafBtGposw=="
   "resolved" "https://registry.npmjs.org/@popperjs/core/-/core-2.11.5.tgz"
@@ -1997,20 +2005,15 @@
   "resolved" "https://registry.npmjs.org/@types/long/-/long-4.0.2.tgz"
   "version" "4.0.2"
 
-"@types/node@*":
-  "integrity" "sha512-z+2vB6yDt1fNwKOeGbckpmirO+VBDuQqecXkgeIqDlaOtmKn6hPR/viQ8cxCfqLU4fTlvM3+YjM367TukWdxpg=="
-  "resolved" "https://registry.npmjs.org/@types/node/-/node-18.6.1.tgz"
-  "version" "18.6.1"
+"@types/node@*", "@types/node@18.6.2":
+  "integrity" "sha512-KcfkBq9H4PI6Vpu5B/KoPeuVDAbmi+2mDBqGPGUgoL7yXQtcWGu2vJWmmRkneWK3Rh0nIAX192Aa87AqKHYChQ=="
+  "resolved" "https://registry.npmjs.org/@types/node/-/node-18.6.2.tgz"
+  "version" "18.6.2"
 
 "@types/node@^10.1.0":
   "integrity" "sha512-F0KIgDJfy2nA3zMLmWGKxcH2ZVEtCZXHHdOQs2gSaQ27+lNeEfGxzkIw90aXswATX7AZ33tahPbzy6KAfUreVw=="
   "resolved" "https://registry.npmjs.org/@types/node/-/node-10.17.60.tgz"
   "version" "10.17.60"
-
-"@types/node@18.6.2":
-  "integrity" "sha512-KcfkBq9H4PI6Vpu5B/KoPeuVDAbmi+2mDBqGPGUgoL7yXQtcWGu2vJWmmRkneWK3Rh0nIAX192Aa87AqKHYChQ=="
-  "resolved" "https://registry.npmjs.org/@types/node/-/node-18.6.2.tgz"
-  "version" "18.6.2"
 
 "@types/parse-json@^4.0.0":
   "integrity" "sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA=="
@@ -4299,6 +4302,11 @@
   "version" "4.2.0"
   dependencies:
     "find-up" "^4.0.0"
+
+"playwright-core@1.24.2":
+  "integrity" "sha512-zfAoDoPY/0sDLsgSgLZwWmSCevIg1ym7CppBwllguVBNiHeixZkc1AdMuYUPZC6AdEYc4CxWEyLMBTw2YcmRrA=="
+  "resolved" "https://registry.npmjs.org/playwright-core/-/playwright-core-1.24.2.tgz"
+  "version" "1.24.2"
 
 "postcss-load-config@^2.0.0":
   "integrity" "sha512-4pV3JJVPLd5+RueiVVB+gFOAa7GWc25XQcMp86Zexzke69mKf6Nx9LRcQywdz7yZI9n1udOxmLuAwTBypypF8Q=="
