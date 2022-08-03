@@ -12,7 +12,8 @@
     "build": "next build",
     "start": "next start",
     "type-check": "tsc",
-    "test": "jest"
+    "test": "jest",
+    "e2e": "playwright test"
   },
   "main": "pages/index.tsx",
   "dependencies": {
