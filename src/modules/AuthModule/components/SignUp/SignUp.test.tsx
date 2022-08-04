@@ -7,13 +7,13 @@ describe("<SignUp />", () => {
     render(<SignUp />);
   });
 
-  it("Has *Google* signup button", () => {
+  it("Has *Google* sign up button", () => {
     render(<SignUp />);
     const googleAuthBtn = screen.getByTestId("googleAuthBtn");
     expect(googleAuthBtn).toBeInTheDocument();
   });
 
-  it("Has *Create Account* signup button", () => {
+  it("Has *Create Account* sign up button", () => {
     render(<SignUp />);
     const signUpViaEmailBtn = screen.getByRole("button", { name: /Create Account/i });
     expect(signUpViaEmailBtn).toBeInTheDocument();
