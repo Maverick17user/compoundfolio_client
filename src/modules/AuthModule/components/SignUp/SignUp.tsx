@@ -3,6 +3,10 @@ import { SignView } from "@modules/AuthModule/views";
 import { TextField } from "@mui/material";
 import { useFormik } from "formik";
 import React from "react";
+import getStaticSignUpProps from "./getStaticSignUpProps";
+
+
+export const getStaticProps = getStaticSignUpProps;
 
 export default function SignUp() {
   // TODO: Validation
@@ -18,7 +22,7 @@ export default function SignUp() {
     initialValues: initialSignUpFormValues,
     validateOnChange: false,
     onSubmit: ({ email, name, password }) => {
-      
+
     },
   }); 
 
