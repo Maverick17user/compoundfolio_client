@@ -1,7 +1,7 @@
 import { styled } from "@mui/material";
 import { Box } from "@mui/system";
 
-export const SignView = styled(Box)({
+export const SignViewContainer = styled(Box)({
   display: "flex",
   height: "100vh",
 })
