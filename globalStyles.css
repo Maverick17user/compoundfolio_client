@@ -17,3 +17,8 @@ body {
 div#__next {
   min-height: 100vh;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+}

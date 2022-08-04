@@ -1,10 +1,15 @@
-import { Box, Typography, TextField } from "@mui/material";
-import { CenterView, SignViewContainer } from "./styled";
+import { Box, Typography } from "@mui/material";
+import { CenterView, SignButton, SignViewContainer } from "./styled";
 import Image from "next/image";
 import React from "react";
 import logo from "../../images/signWallpaper.png";
+import ISignView from "./ISignView";
 
-export default function SignView() {
+export default function SignView({
+  children,
+  isSignUp = false,
+  handleSubmit,
+}: ISignView) {
   return (
     <SignViewContainer>
       <Image
@@ -15,22 +20,16 @@ export default function SignView() {
         priority={true}
       />
       <CenterView component="section" flexGrow={1}>
-        <Box>
+        <Box display="flex" flexDirection="column" alignItems="center">
           <Typography component="h1">Sign up</Typography>
-          <Box component="form" display="flex" flexDirection="column">
-            <TextField
-              variant="outlined"
-              placeholder="Name"
-              label="Name"
-              name="name"
-            />
-            <TextField
-              variant="outlined"
-              placeholder="Password"
-              label="Password"
-              name="password"
-            />
-          </Box>
+          {/* TODO: Add Google OAuth component */}
+          <Typography>- OR -</Typography>
+          <form onSubmit={handleSubmit}>
+            {children}
+            <SignButton type="submit">
+              {isSignUp ? "Create Account" : "Sign In"}
+            </SignButton>
+          </form>
         </Box>
       </CenterView>
     </SignViewContainer>
