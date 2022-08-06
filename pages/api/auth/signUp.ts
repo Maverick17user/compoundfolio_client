@@ -1,12 +1,12 @@
+import { ref, set } from "firebase/database";
 import { NextApiRequest, NextApiResponse } from "next";
+import { db } from "../graphql";
 
 type ResponseData = {
   message: string;
 };
 
 // TODO: 1
-// Choose & Init DB
-// Crate DB User schema
 // Crate GQL User schema
 // [ Front ] Crate GQL User resolver (with JWT, to sign-in the user after req.)
 
@@ -22,6 +22,22 @@ export default function signUp(
     // Add user to the DB
     // Generate JWT
     // Send 200 status with JWT to the client
-    res.status(200).json({ message: "John Doe" });
+
+    const { name, email, password } = req.body
+
+    try {
+      const UsersCollection = ref(db, "users");
+  
+      set(UsersCollection, {
+        name, 
+        email, 
+        password
+      });
+  
+      res.status(200).json({ message: "John Doe" });
+    } catch {
+      res.status(200).json({ message: "smth. went wrong!" });
+    }
+
   }
 }
