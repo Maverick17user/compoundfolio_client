@@ -14,7 +14,7 @@ export default function signUp(
   req: NextApiRequest,
   res: NextApiResponse<ResponseData>
 ) {
-  if (req.method === "GET") {
+  if (req.method === "POST") {
     // TODO: 2
     // Validate the req.body data
     // Return errors
