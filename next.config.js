@@ -1,14 +1,14 @@
-// // next.config.js
 const withImages = require("next-images");
-// module.exports = withImages();
-module.exports = withImages({
+const withMDX = require("@next/mdx");
+
+module.exports = withMDX(withImages({
   future: {
     webpack5: true
   },
   images: {
     disableStaticImages: true
   },
-  // pageExtensions: ['ts, js, tsx'],
+  pageExtensions: ['ts', 'tsx', 'md', 'mdx'],
   exportPathMap: async function() {
     const paths = {
       '/': { page: '/' }
@@ -25,10 +25,4 @@ module.exports = withImages({
     FIREBASE_MESSAGING_SENDER_ID: process.env.FIREBASE_MESSAGING_SENDER_ID,
     FIREBASE_APP_ID: process.env.FIREBASE_APP_ID,
   },
-});
-
-// module.exports = {
-//   images: {
-//     disableStaticImages: true
-//   }
-// };
+}));

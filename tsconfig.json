@@ -4,8 +4,12 @@
     "alwaysStrict": true,
     "baseUrl": ".",
     "paths": {
-      "@core/*": ["./src/core/*"],
-      "@modules/*": ["./src/modules/*"],
+      "@core/*": [
+        "./src/core/*"
+      ],
+      "@modules/*": [
+        "./src/modules/*"
+      ]
     },
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
@@ -34,6 +38,9 @@
   "include": [
     "**/*.ts",
     "**/*.tsx",
-    "src/modules/AuthModule/components/SignUp/.d.ts"
-, "pages/_document.js", "src/core/functions/assetsTransformers.js", "pages/api/resolvers/index.jsrc/core/functions/fetcher.js"  ]
+    "src/modules/AuthModule/components/SignUp/.d.ts",
+    "pages/_document.js",
+    "src/core/functions/assetsTransformers.js",
+    "pages/api/resolvers/index.jsrc/core/functions/fetcher.js"
+  ]
 }

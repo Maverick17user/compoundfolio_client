@@ -8,7 +8,7 @@ import ISignView from "./ISignView";
 export default function SignView({
   children,
   isSignUp = false,
-  handleSubmit
+  handleSubmit,
 }: ISignView) {
   return (
     <SignViewContainer>
